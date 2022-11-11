@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+
+.appNavBar {
+  .appToolbar {
+    justify-content: space-between;
+
+    .logo {
+      width: 245px;
+      height: auto;
+    }
+
+    .navGrid {
+      .navItem {
+        color: #000;
+        transition: 0.7s;
+        cursor: pointer;
+      }
+
+      .navItem:hover {
+        color: $color-secondary;
+      }
+    }
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .iconMenu {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .logo {
+        width: 220px;
+      }
+    }
+  }
+}
