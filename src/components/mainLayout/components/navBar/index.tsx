@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import Image from 'next/image';
 
-import styles from '@/styles/navBar.module.scss';
+import styles from './navBar.module.scss';
 
 export function NavBar(props: AppBarProps) {
   return (

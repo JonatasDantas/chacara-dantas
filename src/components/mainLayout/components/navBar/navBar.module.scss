@@ -1,13 +1,16 @@
-@import 'variables';
-@import 'mixins';
+@import '@/styles/variables';
+@import '@/styles/mixins';
 
 .appNavBar {
+  position: sticky;
+  height: 10vh;
+
   .appToolbar {
     justify-content: space-between;
 
     .logo {
-      width: 245px;
-      height: auto;
+      width: auto;
+      height: 8.2vh;
     }
 
     .navGrid {
@@ -31,9 +34,9 @@
         justify-content: flex-start;
       }
 
-      .logo {
-        width: 220px;
-      }
+      // .logo {
+      //   width: 220px;
+      // }
     }
   }
 }

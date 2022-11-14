@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
-import { Box, Toolbar } from '@mui/material';
+import { Box } from '@mui/material';
 
 import { NavItem } from '@/types';
 import { AppDrawer } from './components/drawer';
 import { NavBar } from './components/navBar';
+
+import styles from './mainLayout.module.scss';
 
 export function MainLayout(props: React.PropsWithChildren) {
   const navItems: NavItem[] = [
@@ -22,7 +24,7 @@ export function MainLayout(props: React.PropsWithChildren) {
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box className={styles.app} sx={{ display: 'flex' }}>
       <NavBar
         navItems={navItems}
         handleDrawerToggle={handleDrawerToggle}
@@ -35,8 +37,7 @@ export function MainLayout(props: React.PropsWithChildren) {
           mobileOpen={mobileOpen}
         />
       </Box>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar sx={{ p: 1 }} />
+      <Box component="main" className={styles.content}>
         {props.children}
       </Box>
     </Box>
