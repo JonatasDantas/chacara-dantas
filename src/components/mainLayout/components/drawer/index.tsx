@@ -33,7 +33,11 @@ export function AppDrawer(props: AppBarProps) {
             // <>
             <ListItem key={item.url} sx={{ p: 0.5 }}>
               <ListItemButton key={item.url} sx={{ textAlign: 'center' }}>
-                <ListItemText key={item.url} primary={item.name} />
+                <ListItemText
+                  key={item.url}
+                  primary={item.name}
+                  onClick={() => props.handlePageRedirect(item.url)}
+                />
               </ListItemButton>
             </ListItem>
             // <Divider />

@@ -43,17 +43,13 @@ export function NavBar(props: AppBarProps) {
                   className={styles.navItem}
                   variant="h6"
                   sx={{ fontWeight: 400 }}
+                  onClick={() => props.handlePageRedirect(item.url)}
                 >
                   {item.name}
                 </Typography>
               </Grid>
             ))}
           </Grid>
-          {/* {props.navItems.map((item) => (
-            <Box key={item.url} sx={{ color: '#000' }}>
-              {item.name}
-            </Box>
-          ))} */}
         </Box>
       </Toolbar>
     </AppBar>

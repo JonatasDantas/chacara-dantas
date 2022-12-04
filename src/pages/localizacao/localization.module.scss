@@ -1,0 +1,18 @@
+.localization {
+  padding: 60px 90px;
+  background-color: rgba(10, 0, 0, 0.04);
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    color: black;
+
+    iframe {
+      align-self: center;
+      border: 1px solid rgba(10, 0, 0, 0.3) !important;
+      border-radius: 12px;
+    }
+  }
+}

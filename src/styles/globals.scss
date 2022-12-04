@@ -1,4 +1,4 @@
-@use 'variables';
+@import '@/styles/variables';
 
 html,
 body {
@@ -25,4 +25,11 @@ a {
     color: white;
     background: black;
   }
+}
+
+.divider {
+  background-color: $color-secondary;
+  border: 0;
+  border-top: 2.5px solid rgba(0, 0, 0, 0.1);
+  width: 50px;
 }

@@ -1,0 +1,130 @@
+@import '@/styles/mixins';
+
+.aboutUs {
+  padding: 60px 90px;
+
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+
+    .aboutImage {
+      width: 100%;
+      height: 100%;
+    }
+
+    .info {
+      color: black;
+      font-weight: 300;
+      font-family: 'Roboto';
+      font-size: 1.25rem;
+    }
+  }
+
+  @include mobile {
+    padding: 20px 24px;
+
+    .aboutGrid {
+      margin: 25px 0;
+      display: flex;
+      flex-direction: column;
+
+      .info {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.theStructure {
+  background-color: rgba(10, 0, 0, 0.04);
+  padding: 90px;
+
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+
+    .highlight {
+      background-color: #fff;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      color: #000000;
+
+      svg {
+        font-size: 80px;
+        color: greenyellow;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .subtitle {
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 20px 34px;
+
+    .highlights {
+      grid-template-columns: 1fr;
+
+      .highlight {
+        .title {
+          font-size: 1.9rem;
+        }
+      }
+    }
+  }
+}
+
+// .accommodations {
+//   display: flex;
+//   flex-direction: row;
+//   background-color: #193b5b;
+//   padding: 90px;
+//   .accommodation {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     width: 100%;
+//     gap: 40px;
+
+//     img {
+//       width: 100%;
+//       height: auto;
+//       border-radius: 15px;
+//     }
+
+//     .accommodationDescription {
+//       background: #fff;
+//       padding: 20px;
+//       border-radius: 15px;
+//       color: #000000;
+
+//       .title {
+//         font-weight: 600;
+//         font-size: 2rem;
+//         text-align: center;
+//       }
+
+//       .subtitle {
+//         font-weight: 300;
+//         font-size: 1rem;
+//         text-align: center;
+//       }
+//     }
+//   }
+// }
+
